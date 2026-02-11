@@ -1,3 +1,13 @@
+import { HelmetProvider } from '@dr.pogodin/react-helmet'
+
+import { Component } from '@/pages/home/home.page'
+
 export const App = () => {
-	return <div>App</div>
+	return (
+		<>
+			<HelmetProvider>
+				<Component />
+			</HelmetProvider>
+		</>
+	)
 }
