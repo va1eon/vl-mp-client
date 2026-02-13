@@ -1,12 +1,11 @@
 import { HelmetProvider } from '@dr.pogodin/react-helmet'
-
-import { Component } from '@/pages/home/home.page'
+import { Outlet } from 'react-router-dom'
 
 export const App = () => {
 	return (
 		<>
 			<HelmetProvider>
-				<Component />
+				<Outlet />
 			</HelmetProvider>
 		</>
 	)
