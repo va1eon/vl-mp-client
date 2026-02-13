@@ -1,8 +1,8 @@
 import { createBrowserRouter, redirect } from 'react-router-dom'
 
-import { App } from '@/app/app'
 import { getRoute } from '@/config'
 
+import { App } from '../app'
 import { ProtectedRoute } from './protected.route'
 
 export const router = createBrowserRouter([
